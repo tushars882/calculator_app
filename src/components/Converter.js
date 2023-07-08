@@ -4,7 +4,7 @@ import axios from "axios";
 
 const Converter = () => {
   const [initialState, setState] = useState({
-    currencies: ["USD", "SGD", "PHP", "EUR", "INR"],
+    currencies: ["USD", "SGD", "PHP", "EUR", "INR",],
     base: "USD",
     amount: "",
     convertTo: "INR",
@@ -125,7 +125,7 @@ const Converter = () => {
                 : result}
               {convertTo}
             </h3>
-            <p>As of {amount === "" ? "" : date === null ? "" : date}</p>
+            {/* <p>As of {amount === "" ? "" : date === null ? "" : date}</p> */}
             <div className="row">
               <div className="col-lg-10">
                 <form className="form-inline mb-4">
