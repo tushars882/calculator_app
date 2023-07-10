@@ -46,7 +46,7 @@
 
 
 
-html {
+/* html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -55,5 +55,8 @@ html {
   -webkit-tap-highlight-color: transparent;
   display: flex;
   justify-content: center;
+} */
+.container1{
+  display:inline-block;
 }
 

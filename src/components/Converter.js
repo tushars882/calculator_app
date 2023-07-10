@@ -106,6 +106,8 @@ const Converter = () => {
   };
 
   return (
+    <div className="container1">
+
     <div className="container ml-5">
       <div className="row">
         <div style={{ padding: "30px", background: "#ececec" }}>
@@ -113,7 +115,7 @@ const Converter = () => {
             title="CURRENCY CONVERTOR"
             bordered={false}
             style={{ width: 550 }}
-          >
+            >
             <h5>
               {amount} {base} is equivalent to{" "}
             </h5>
@@ -134,13 +136,13 @@ const Converter = () => {
                     value={amount}
                     onChange={onChangeInput}
                     className="form-control form-control-lg mx-5"
-                  />
+                    />
                   <select
                     name="base"
                     value={base}
                     onChange={handleSelect}
                     className="form-control form-control-lg"
-                  >
+                    >
                     {currencies.map((currency) => (
                       <option key={currency} value={currency}>
                         {currency}
@@ -153,19 +155,19 @@ const Converter = () => {
                     disabled={true}
                     value={
                       amount === ""
-                        ? "0"
-                        : result === null
-                        ? "Calculating..."
-                        : result
+                      ? "0"
+                      : result === null
+                      ? "Calculating..."
+                      : result
                     }
                     className="form-control form-control-lg mx-5"
-                  />
+                    />
                   <select
                     name="convertTo"
                     value={convertTo}
                     onChange={handleSelect}
                     className="form-control form-control-lg"
-                  >
+                    >
                     {currencies.map((currency) => (
                       <option key={currency} value={currency}>
                         {currency}
@@ -184,6 +186,7 @@ const Converter = () => {
         </div>
       </div>
     </div>
+                    </div>
   );
 };
 
