@@ -48,35 +48,7 @@ const Converter = () => {
     }
   }, [amount, convertTo]);
   
-// useEffect(() => {
-//     if (amount === isNaN) {
-//       return;
-//     } else {
-//       const getCurrencyConvertTo = async () => {
-//         try {
-//           const apiKey = '333582c91a841c05975b196039afaa82';
-//           const apiUrl = `https://api.exchangeratesapi.io/latest?base=${base}`;
-//           const response = await axios.get(apiUrl, {
-//             headers: {
-//               'Authorization': `Bearer ${apiKey}`
-//             }
-//           });
-  
-//           console.log("response==>", response);
-//           const date = response.data.date;
-//           const result = (response.data.rates[convertTo] * amount).toFixed(3);
-//           setState({
-//             ...initialState,
-//             result,
-//             date,
-//           });
-//         } catch (error) {
-//           console.error(error);
-//         }
-//       };
-//       getCurrencyConvertTo();
-//     }
-//   }, [amount, base, convertTo]);
+
   
 
   const onChangeInput = (e) => {
