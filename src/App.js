@@ -67,16 +67,13 @@ const dateBuilder = (d) => {
           </div>
         </div>
         ) : ('')}
+        <Converter/>
       </main>
     </div>
         </div>
+        
   );
-
-
-{/* export default App; */}
-    </div>
-    <div className="App">
-      <Converter/>
+    
     </div>
     </div>
     </>

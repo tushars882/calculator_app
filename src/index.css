@@ -20,6 +20,7 @@ code {
   background-size: cover;
   background-position:bottom;
   transition: 0.4 ease-out;
+  transition:0.4 linear;
   /* background-repeat: no-repeat; */
   /* background-image: linear-gradient(to bottom , rgba(0,0,0,0.2),rgba(0,0,0,0.75)); */
   
@@ -103,4 +104,22 @@ main{
   font-size: 48px;
   font-weight: 700;
   text-shadow: 3px 3px rgb(50 , 50 , 70 , 0.5);
+}
+.app{
+  text-align: center;
+}
+.container2{
+  background-image: url( './images/cold-bg.jpg');
+  background-size: cover;
+  background-position:bottom;
+  transition: 0.4 ease-out;
+  transition:0.5 linear;
+  display: contents;
+}
+.container2-warm{
+  background-image: url('./images/warm-bg.jpg');
+  transition: 0.4 linear;
+  background-size: cover;
+  background-position:bottom;
+  display: contents;
 }
