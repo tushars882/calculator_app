@@ -4,6 +4,7 @@ import './index.css'
 import Converter from "./components/Converter"
 import Weather from './components/weather';
 import React, { useState } from 'react';
+import Converter2 from './components/Converter2';
 const api = {
   key: "895284fb2d2c50a520ea537456963d9c",
   base: "http://api.openweathermap.org/data/2.5/"
@@ -67,7 +68,7 @@ const dateBuilder = (d) => {
           </div>
         </div>
         ) : ('')}
-        <Converter/>
+        <Converter2/>
       </main>
     </div>
         </div>

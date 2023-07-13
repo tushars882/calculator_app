@@ -21,19 +21,15 @@ const Converter = () => {
       const getCurrencyConvertTo = async () => {
         try {
           const response = await axios.get(
-            `http://apilayer.net/api/live`, {
-            params: {
-              access_key: '1b08953a56f4517e68bbad93839eb7e8',
-              currencies: 'USD,SGD,PHP,EUR,INR',
-              source: 'USD',
-              format: 1
+            axios.get('http://api.apilayer.com/fixer/latest?base=USD&apikey=8El09v1tgPaDSKNR0TGCUrzqXBE6AdDI'), {
+            
             }
-          });
+          );
   
           console.log("response==>", response);
           const date = response.data.date;
-          const rates = response.data.quotes;
-          const convertToRate = rates[`USD${convertTo}`];
+          const rates = response.data.rates;
+          const convertToRate = rates[convertTo];
           const result = (convertToRate * amount).toFixed(3);
           setState({
             ...initialState,
@@ -47,6 +43,7 @@ const Converter = () => {
       getCurrencyConvertTo();
     }
   }, [amount, convertTo]);
+  
   
 
   

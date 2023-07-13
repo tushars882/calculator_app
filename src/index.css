@@ -113,7 +113,7 @@ main{
   background-size: cover;
   background-position:bottom;
   transition: 0.4 ease-out;
-  transition:0.5 linear;
+  transition-delay:0.5 ease;
   display: contents;
 }
 .container2-warm{
@@ -121,5 +121,10 @@ main{
   transition: 0.4 linear;
   background-size: cover;
   background-position:bottom;
+  display: contents;
+  background-size: cover;
+  background-position:bottom;
+  transition: 0.4 ease-out;
+  transition:0.5 linear;
   display: contents;
 }
