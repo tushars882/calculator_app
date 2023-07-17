@@ -25,6 +25,7 @@ function Converter2() {
       }
       init();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [rates]);
 
 
