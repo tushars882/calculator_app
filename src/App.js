@@ -1,7 +1,6 @@
 
 import './App.css';
 import './index.css'
-import Converter from "./components/Converter"
 import Weather from './components/weather';
 import React, { useState } from 'react';
 import Converter2 from './components/Converter2';
